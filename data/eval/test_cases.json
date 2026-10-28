@@ -1,0 +1,62 @@
+[
+  {
+    "query": "What is minimum wage?",
+    "expected_keywords": ["minimum wage", "minimum rate", "wages"],
+    "expected_sources": ["Code on Wages, 2019"]
+  },
+  {
+    "query": "How are social security benefits defined for workers?",
+    "expected_keywords": ["social security", "benefits", "worker"],
+    "expected_sources": ["Code on Social Security"]
+  },
+  {
+    "query": "What is an industrial dispute under labor law?",
+    "expected_keywords": ["industrial dispute", "employer", "workman"],
+    "expected_sources": ["Industrial Relations Code, 2020", "The Industrial Disputes Act, 1947"]
+  },
+  {
+    "query": "What are the obligations related to factory safety?",
+    "expected_keywords": ["factory", "safety", "health"],
+    "expected_sources": ["The Factories Act, 1948", "Occupational Safety, Health and Working Conditions Code, 2020"]
+  },
+  {
+    "query": "What rights are provided under maternity benefit law?",
+    "expected_keywords": ["maternity", "benefit", "woman"],
+    "expected_sources": ["The Maternity Benefit Act, 1961", "Maternity Benefit(Amendment) Act"]
+  },
+  {
+    "query": "How is gratuity paid to employees?",
+    "expected_keywords": ["gratuity", "employee", "payment"],
+    "expected_sources": ["The Payment of Gratuity Act"]
+  },
+  {
+    "query": "What protections exist for trade unions?",
+    "expected_keywords": ["trade union", "registration", "union"],
+    "expected_sources": ["The Trade Unions Act,1926"]
+  },
+  {
+    "query": "What does provident fund law require from employers?",
+    "expected_keywords": ["provident fund", "employer", "contribution"],
+    "expected_sources": ["The Employees Provident Fund & Miscellaneous Provisions Act"]
+  },
+  {
+    "query": "What is employee compensation for injury?",
+    "expected_keywords": ["compensation", "injury", "employee"],
+    "expected_sources": ["The Employees Compensation Act, 1923"]
+  },
+  {
+    "query": "What rules apply to inter-state migrant workers?",
+    "expected_keywords": ["inter-state", "migrant", "workmen"],
+    "expected_sources": ["The Inter-State Migrant Workmen"]
+  },
+  {
+    "query": "What protections are available for unorganised workers?",
+    "expected_keywords": ["unorganised workers", "social security", "scheme"],
+    "expected_sources": ["The Unorganised Workers Social Security Act"]
+  },
+  {
+    "query": "What does the wage definition include under labor codes?",
+    "expected_keywords": ["wage", "definition", "remuneration"],
+    "expected_sources": ["Code on Wages, 2019"]
+  }
+]

@@ -1,0 +1,438 @@
+{
+  "summary": {
+    "mode": "full_pipeline",
+    "retrieval": {
+      "precision": 0.9166666666666666,
+      "recall": 0.9166666666666666
+    },
+    "generation": {
+      "keyword_score": 0.0,
+      "source_score": 0.0
+    },
+    "hallucination_rate": 1.0,
+    "latency": {
+      "avg_total_time": 0.5682239333788554,
+      "avg_retrieval_time": 0.015750467777252197,
+      "avg_rerank_time": 0.5403054555257162,
+      "avg_generation_time": 0.00024574995040893555
+    },
+    "baseline_comparison": {
+      "hybrid_precision": 0.9166666666666666,
+      "dense_precision": 0.9083333333333333
+    },
+    "confidence_calibration": {
+      "overconfident_rate": 0.4166666666666667
+    },
+    "errors": [
+      {
+        "query": "What is minimum wage?",
+        "error_type": "hallucination"
+      },
+      {
+        "query": "How are social security benefits defined for workers?",
+        "error_type": "hallucination"
+      },
+      {
+        "query": "What is an industrial dispute under labor law?",
+        "error_type": "hallucination"
+      },
+      {
+        "query": "What are the obligations related to factory safety?",
+        "error_type": "hallucination"
+      },
+      {
+        "query": "What rights are provided under maternity benefit law?",
+        "error_type": "hallucination"
+      },
+      {
+        "query": "How is gratuity paid to employees?",
+        "error_type": "hallucination"
+      },
+      {
+        "query": "What protections exist for trade unions?",
+        "error_type": "hallucination"
+      },
+      {
+        "query": "What does provident fund law require from employers?",
+        "error_type": "hallucination"
+      },
+      {
+        "query": "What is employee compensation for injury?",
+        "error_type": "hallucination"
+      },
+      {
+        "query": "What rules apply to inter-state migrant workers?",
+        "error_type": "hallucination"
+      },
+      {
+        "query": "What protections are available for unorganised workers?",
+        "error_type": "hallucination"
+      },
+      {
+        "query": "What does the wage definition include under labor codes?",
+        "error_type": "hallucination"
+      }
+    ],
+    "pass_fail": {
+      "hallucination_ok": false,
+      "keyword_ok": false
+    }
+  },
+  "per_query": [
+    {
+      "query": "What is minimum wage?",
+      "retrieval": {
+        "precision": 1.0,
+        "recall": 1.0
+      },
+      "baseline": {
+        "hybrid_precision": 1.0,
+        "dense_precision": 1.0
+      },
+      "generation": {
+        "keyword_score": 0.0,
+        "source_score": 0.0,
+        "confidence": 0.1983332171684804,
+        "confidence_label": "low"
+      },
+      "hallucination": true,
+      "error_type": "hallucination",
+      "latency": {
+        "retrieval_time": 0.012074470520019531,
+        "rerank_time": 0.4983482360839844,
+        "generation_time": 0.00015854835510253906,
+        "total_time": 0.5183429718017578
+      }
+    },
+    {
+      "query": "How are social security benefits defined for workers?",
+      "retrieval": {
+        "precision": 1.0,
+        "recall": 1.0
+      },
+      "baseline": {
+        "hybrid_precision": 1.0,
+        "dense_precision": 1.0
+      },
+      "generation": {
+        "keyword_score": 0.0,
+        "source_score": 0.0,
+        "confidence": 0.22050131701327408,
+        "confidence_label": "low"
+      },
+      "hallucination": true,
+      "error_type": "hallucination",
+      "latency": {
+        "retrieval_time": 0.016182661056518555,
+        "rerank_time": 0.5585448741912842,
+        "generation_time": 0.0004553794860839844,
+        "total_time": 0.5872054100036621
+      }
+    },
+    {
+      "query": "What is an industrial dispute under labor law?",
+      "retrieval": {
+        "precision": 1.0,
+        "recall": 1.0
+      },
+      "baseline": {
+        "hybrid_precision": 1.0,
+        "dense_precision": 1.0
+      },
+      "generation": {
+        "keyword_score": 0.0,
+        "source_score": 0.0,
+        "confidence": 0.8159893008600329,
+        "confidence_label": "high"
+      },
+      "hallucination": true,
+      "error_type": "hallucination",
+      "latency": {
+        "retrieval_time": 0.0164186954498291,
+        "rerank_time": 0.5649473667144775,
+        "generation_time": 0.000278472900390625,
+        "total_time": 0.5940237045288086
+      }
+    },
+    {
+      "query": "What are the obligations related to factory safety?",
+      "retrieval": {
+        "precision": 1.0,
+        "recall": 1.0
+      },
+      "baseline": {
+        "hybrid_precision": 1.0,
+        "dense_precision": 1.0
+      },
+      "generation": {
+        "keyword_score": 0.0,
+        "source_score": 0.0,
+        "confidence": 0.6609033449110276,
+        "confidence_label": "medium"
+      },
+      "hallucination": true,
+      "error_type": "hallucination",
+      "latency": {
+        "retrieval_time": 0.016231775283813477,
+        "rerank_time": 0.5429389476776123,
+        "generation_time": 0.0002243518829345703,
+        "total_time": 0.571462869644165
+      }
+    },
+    {
+      "query": "What rights are provided under maternity benefit law?",
+      "retrieval": {
+        "precision": 1.0,
+        "recall": 1.0
+      },
+      "baseline": {
+        "hybrid_precision": 1.0,
+        "dense_precision": 1.0
+      },
+      "generation": {
+        "keyword_score": 0.0,
+        "source_score": 0.0,
+        "confidence": 0.9122905458423737,
+        "confidence_label": "high"
+      },
+      "hallucination": true,
+      "error_type": "hallucination",
+      "latency": {
+        "retrieval_time": 0.016524553298950195,
+        "rerank_time": 0.4942338466644287,
+        "generation_time": 0.00025725364685058594,
+        "total_time": 0.5234577655792236
+      }
+    },
+    {
+      "query": "How is gratuity paid to employees?",
+      "retrieval": {
+        "precision": 1.0,
+        "recall": 1.0
+      },
+      "baseline": {
+        "hybrid_precision": 1.0,
+        "dense_precision": 1.0
+      },
+      "generation": {
+        "keyword_score": 0.0,
+        "source_score": 0.0,
+        "confidence": 0.7725571262334866,
+        "confidence_label": "high"
+      },
+      "hallucination": true,
+      "error_type": "hallucination",
+      "latency": {
+        "retrieval_time": 0.015368461608886719,
+        "rerank_time": 0.578681230545044,
+        "generation_time": 0.0002357959747314453,
+        "total_time": 0.6065759658813477
+      }
+    },
+    {
+      "query": "What protections exist for trade unions?",
+      "retrieval": {
+        "precision": 1.0,
+        "recall": 1.0
+      },
+      "baseline": {
+        "hybrid_precision": 1.0,
+        "dense_precision": 1.0
+      },
+      "generation": {
+        "keyword_score": 0.0,
+        "source_score": 0.0,
+        "confidence": 0.5644339420036477,
+        "confidence_label": "medium"
+      },
+      "hallucination": true,
+      "error_type": "hallucination",
+      "latency": {
+        "retrieval_time": 0.015487909317016602,
+        "rerank_time": 0.5302155017852783,
+        "generation_time": 0.0002620220184326172,
+        "total_time": 0.5582659244537354
+      }
+    },
+    {
+      "query": "What does provident fund law require from employers?",
+      "retrieval": {
+        "precision": 1.0,
+        "recall": 1.0
+      },
+      "baseline": {
+        "hybrid_precision": 1.0,
+        "dense_precision": 0.9
+      },
+      "generation": {
+        "keyword_score": 0.0,
+        "source_score": 0.0,
+        "confidence": 0.9368301475550185,
+        "confidence_label": "high"
+      },
+      "hallucination": true,
+      "error_type": "hallucination",
+      "latency": {
+        "retrieval_time": 0.01626896858215332,
+        "rerank_time": 0.4737262725830078,
+        "generation_time": 0.0002410411834716797,
+        "total_time": 0.5024616718292236
+      }
+    },
+    {
+      "query": "What is employee compensation for injury?",
+      "retrieval": {
+        "precision": 1.0,
+        "recall": 1.0
+      },
+      "baseline": {
+        "hybrid_precision": 1.0,
+        "dense_precision": 1.0
+      },
+      "generation": {
+        "keyword_score": 0.0,
+        "source_score": 0.0,
+        "confidence": 0.9147114629241931,
+        "confidence_label": "high"
+      },
+      "hallucination": true,
+      "error_type": "hallucination",
+      "latency": {
+        "retrieval_time": 0.015459060668945312,
+        "rerank_time": 0.602088212966919,
+        "generation_time": 0.00025153160095214844,
+        "total_time": 0.6301124095916748
+      }
+    },
+    {
+      "query": "What rules apply to inter-state migrant workers?",
+      "retrieval": {
+        "precision": 1.0,
+        "recall": 1.0
+      },
+      "baseline": {
+        "hybrid_precision": 1.0,
+        "dense_precision": 1.0
+      },
+      "generation": {
+        "keyword_score": 0.0,
+        "source_score": 0.0,
+        "confidence": 0.9936031025889843,
+        "confidence_label": "high"
+      },
+      "hallucination": true,
+      "error_type": "hallucination",
+      "latency": {
+        "retrieval_time": 0.0164644718170166,
+        "rerank_time": 0.5015592575073242,
+        "generation_time": 0.00022411346435546875,
+        "total_time": 0.530597448348999
+      }
+    },
+    {
+      "query": "What protections are available for unorganised workers?",
+      "retrieval": {
+        "precision": 0.0,
+        "recall": 0.0
+      },
+      "baseline": {
+        "hybrid_precision": 0.0,
+        "dense_precision": 0.0
+      },
+      "generation": {
+        "keyword_score": 0.0,
+        "source_score": 0.0,
+        "confidence": 0.010169598841058473,
+        "confidence_label": "low"
+      },
+      "hallucination": true,
+      "error_type": "hallucination",
+      "latency": {
+        "retrieval_time": 0.015800952911376953,
+        "rerank_time": 0.5854096412658691,
+        "generation_time": 0.00011587142944335938,
+        "total_time": 0.6137771606445312
+      }
+    },
+    {
+      "query": "What does the wage definition include under labor codes?",
+      "retrieval": {
+        "precision": 1.0,
+        "recall": 1.0
+      },
+      "baseline": {
+        "hybrid_precision": 1.0,
+        "dense_precision": 1.0
+      },
+      "generation": {
+        "keyword_score": 0.0,
+        "source_score": 0.0,
+        "confidence": 0.37203608583916603,
+        "confidence_label": "low"
+      },
+      "hallucination": true,
+      "error_type": "hallucination",
+      "latency": {
+        "retrieval_time": 0.0167236328125,
+        "rerank_time": 0.5529720783233643,
+        "generation_time": 0.0002446174621582031,
+        "total_time": 0.5824038982391357
+      }
+    }
+  ],
+  "errors": [
+    {
+      "query": "What is minimum wage?",
+      "error_type": "hallucination"
+    },
+    {
+      "query": "How are social security benefits defined for workers?",
+      "error_type": "hallucination"
+    },
+    {
+      "query": "What is an industrial dispute under labor law?",
+      "error_type": "hallucination"
+    },
+    {
+      "query": "What are the obligations related to factory safety?",
+      "error_type": "hallucination"
+    },
+    {
+      "query": "What rights are provided under maternity benefit law?",
+      "error_type": "hallucination"
+    },
+    {
+      "query": "How is gratuity paid to employees?",
+      "error_type": "hallucination"
+    },
+    {
+      "query": "What protections exist for trade unions?",
+      "error_type": "hallucination"
+    },
+    {
+      "query": "What does provident fund law require from employers?",
+      "error_type": "hallucination"
+    },
+    {
+      "query": "What is employee compensation for injury?",
+      "error_type": "hallucination"
+    },
+    {
+      "query": "What rules apply to inter-state migrant workers?",
+      "error_type": "hallucination"
+    },
+    {
+      "query": "What protections are available for unorganised workers?",
+      "error_type": "hallucination"
+    },
+    {
+      "query": "What does the wage definition include under labor codes?",
+      "error_type": "hallucination"
+    }
+  ],
+  "meta": {
+    "num_cases": 12,
+    "mode": "full_pipeline",
+    "elapsed_time": 10.123602628707886
+  }
+}

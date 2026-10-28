@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+	font-family: "Space Grotesk", "Segoe UI", sans-serif;
+	color: #e6efff;
+	background-color: #050914;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+	min-height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background:
+		radial-gradient(circle at 18% 14%, rgba(83, 182, 255, 0.18), transparent 40%),
+		radial-gradient(circle at 75% 20%, rgba(112, 240, 203, 0.16), transparent 35%),
+		linear-gradient(145deg, #02050d 0%, #080f1f 55%, #030714 100%);
+	background-attachment: fixed;
+	line-height: 1.5;
+}
+
+::-webkit-scrollbar {
+	width: 10px;
+	height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+	background: rgba(98, 158, 255, 0.35);
+	border-radius: 999px;
+}
+
+.glass-card {
+	background: rgba(18, 25, 43, 0.55);
+	border: 1px solid rgba(122, 168, 255, 0.25);
+	box-shadow: 0 8px 50px rgba(5, 14, 30, 0.55);
+	backdrop-filter: blur(12px);
+}
+
+.text-gradient {
+	background: linear-gradient(100deg, #53b6ff 10%, #70f0cb 100%);
+	-webkit-background-clip: text;
+	background-clip: text;
+	color: transparent;
+}
+
+@keyframes shimmer {
+	0% {
+		background-position: -180% 0;
+	}
+	100% {
+		background-position: 180% 0;
+	}
+}
+
+.bg-shimmer {
+	background: linear-gradient(100deg, rgba(84, 107, 152, 0.35) 20%, rgba(163, 211, 255, 0.55) 50%, rgba(84, 107, 152, 0.35) 80%);
+	background-size: 200% 100%;
+	animation: shimmer 1.6s infinite linear;
+}
+

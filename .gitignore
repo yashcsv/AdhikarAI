@@ -1,0 +1,44 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Environment files
+.env
+.env.*
+!.env.example
+frontend/.env
+frontend/.env.*
+!frontend/.env.example
+
+# Node/frontend
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
+
+# Runtime output
+*.log
+.DS_Store
+test_out.txt
+.codex
+
+# Local generated data indexes
+data/index/
+data/index_test/
+data/vectorstore/
+data/chunks_test/
+data/chunks_trunc_check/
+data/chunks_validation/
